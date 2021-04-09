@@ -1,0 +1,79 @@
+@import '../../../styles/core/index';
+
+$notification-message-cls: $gu-prefix + '-notification-message';
+
+.#{$notification-message-cls} {
+    display: block;
+    background: var(--color-primary-5);
+    color: var(--color-white);
+    margin-bottom: var(--space-16);
+
+    &-wrapper {
+        display: flex;
+        flex-direction: row;
+        min-height: 75px;
+    }
+
+    &-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--color-primary-4);
+        padding: var(--space-12);
+
+        .svg-icon {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: var(--space-16);
+        min-width: 140px;
+
+        label {
+            display: block;
+            font-size: var(--font-size-12);
+            font-weight: bold;
+            margin-bottom: var(--space-4);
+        }
+
+        .content {
+            font-size: var(--font-size-14);
+            color: var(--color-gray-1);
+        }
+    }
+
+    &-action {
+        display: flex;
+        align-items: center;
+        margin: var(--space-12);
+        color: var(--color-gray-1);
+
+        .svg-button {
+            width: 15px;
+            height: 15px;
+            animation: fade 150ms ease-in-out;
+            padding: var(--space-4);
+
+            &:hover {
+                cursor: pointer;
+                background: var(--color-gray-2);
+            }
+        }
+    }
+
+    &-progress {
+        height: 6px;
+        background: var(--color-primary-5);
+
+        .progress-bar {
+            background: var(--color-success-4);
+            display: block;
+            height: 6px;
+        }
+    }
+}

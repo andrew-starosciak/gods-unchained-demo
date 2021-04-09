@@ -1,0 +1,94 @@
+<div class="asset-viewer-container">
+  <div class="navigation-bar-container">
+    <div class="navigation-content">
+      <div class="svg-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </div>
+      <span> &nbsp; Back to Marketplace </span>
+    </div>
+  </div>
+
+  <div class="imx-asset-container">
+    <div class="imx-asset-view-container">
+      <div class="imx-asset-view-inner">
+        <picture class="picture">
+          <source
+            type="image/webp"
+            srcset="
+              https://card.godsunchained.com/?id=65004&amp;q=1&amp;w=128   128w,
+              https://card.godsunchained.com/?id=65004&amp;q=1&amp;w=256   256w,
+              https://card.godsunchained.com/?id=65004&amp;q=1&amp;w=512   512w,
+              https://card.godsunchained.com/?id=65004&amp;q=1&amp;w=720   720w,
+              https://card.godsunchained.com/?id=65004&amp;q=1&amp;w=1024 1024w
+            "
+            sizes="256px"
+          />
+          <source
+            type="image/png"
+            srcset="
+              https://card.godsunchained.com/?id=65004&amp;q=1&amp;w=128&amp;png=true   128w,
+              https://card.godsunchained.com/?id=65004&amp;q=1&amp;w=256&amp;png=true   256w,
+              https://card.godsunchained.com/?id=65004&amp;q=1&amp;w=512&amp;png=true   512w,
+              https://card.godsunchained.com/?id=65004&amp;q=1&amp;w=720&amp;png=true   720w,
+              https://card.godsunchained.com/?id=65004&amp;q=1&amp;w=1024&amp;png=true 1024w
+            "
+            sizes="256px"
+          />
+          <img
+            class="image"
+            alt="Card Pack Image"
+            src="https://card.godsunchained.com/?id=65004&amp;q=1&amp;w=128&amp;png=true"
+          />
+        </picture>
+      </div>
+    </div>
+
+    <div class="imx-asset-details-container">
+      <div class="imx-asset-details-inner">
+        <div class="imx-asset-details-header">
+          <div class="eth-address">#0x...</div>
+          <div class="availability">Available</div>
+        </div>
+        <div class="imx-asset-details-title">Citadel of the Gods</div>
+        <div class="imx-asset-details-market">Gods Unchained</div>
+        <div class="imx-asset-details-pool">
+          Stored in <span>Immutable X</span>
+        </div>
+      </div>
+      <div class="imx-asset-details-footer">
+          <div class="imx-asset-details-footer-cost">
+            <div class="eth-cost">
+                <div class="svg-logo">
+                    <svg id="icon-currency-eth" viewBox="0 0 32 32">
+                        <path fill="#627eea" style="fill: var(--color35, #627eea)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+                        <path fill="#fff" style="fill: var(--color9, #fff)" opacity="0.6" d="M16.5 4v8.87l7.5 3.35z"></path>
+                        <path fill="#fff" style="fill: var(--color9, #fff)" d="M16.5 4l-7.5 12.22 7.5-3.35z"></path>
+                        <path fill="#fff" style="fill: var(--color9, #fff)" opacity="0.6" d="M16.5 21.97v6.030l7.5-10.385z"></path>
+                        <path fill="#fff" style="fill: var(--color9, #fff)" d="M16.5 28v-6.035l-7.5-4.35z"></path>
+                        <path fill="#fff" style="fill: var(--color9, #fff)" opacity="0.2" d="M16.5 20.575l7.5-4.355-7.5-3.35z"></path>
+                        <path fill="#fff" style="fill: var(--color9, #fff)" opacity="0.6" d="M9 16.22l7.5 4.355v-7.705z"></path>
+                    </svg>
+                </div>
+              <span>100000.0</span>
+            </div>
+          </div>
+          <div class="imx-asset-details-footer-action">
+              <button (click)="purchase()">BUY NOW</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  margin: 0 auto;
+  max-width: 978px;
+  color: var(--color-white);
+  opacity: 0.9;
+  @media (max-width: 768px) {
+    margin: var(--space-16);
+  }
+
+  section {
+    max-width: 32rem;
+    line-height: 1.35;
+    letter-spacing: 0.01rem;
+  }
+
+  li {
+    font-size: var(--font-size-14);
+    line-height: 1.75;
+  }
+
+  a {
+    color: var(--color-accent);
+  }
+}

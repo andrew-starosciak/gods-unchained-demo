@@ -1,0 +1,10 @@
+<div *ngIf="(notificationService.items$ | async)?.length" @guSlideInLeftList>
+  <ng-template ngFor let-message [ngForOf]="notificationService.items$ | async">
+    <gu-notification-message
+      *ngIf="message"
+      @guSlideInLeftList
+      role="alert"
+      [message]="message"
+    ></gu-notification-message>
+  </ng-template>
+</div>

@@ -1,0 +1,13 @@
+@import '../../styles/core/index';
+
+$notification-host-cls: $gu-prefix + '-notification-host';
+
+.#{$notification-host-cls} {
+    position: fixed;
+    top: 90px;
+    left: 20px;
+
+    .wrapper {
+        display: block;
+    }
+}
